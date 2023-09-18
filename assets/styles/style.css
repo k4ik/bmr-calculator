@@ -23,28 +23,24 @@ body {
     height: 100vh;
 }
 
-.form, .result {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.form, .result {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
 form {
     background-color: var(--form-bg-color);
 }
 
-.result {
-    background-color: var(--result-bg-color);
+.form, .result {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form, .result {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 input, select, button {
@@ -58,6 +54,10 @@ option, select, input {
 
 label {
     margin-bottom: 5px;
+}
+
+.result {
+    background-color: var(--result-bg-color);
 }
 
 button {
