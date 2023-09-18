@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMR Calculator</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
     <main>
-        <form>
+        <form class="form">
             <label for="gender">Gender:</label>
             <select name="gender" id="gender">
                 <option value="men">Men</option>
@@ -33,8 +35,13 @@
                 <option value="veryActive">Very active</option>
                 <option value="extremelyActive">Extremely active</option>
             </select>
+
+            <button type="button">
+                <i class="ph-fill ph-barbell"></i>
+                Calculate
+            </button>
         </form>
-        <p>BMR: <strong id="result"></strong></p>
+        <p class="result">BMR: <strong id="result"></strong></p>
     </main>
 </body>
 </html>

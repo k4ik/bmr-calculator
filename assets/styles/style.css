@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+:root {
+    --bg-color:#111827;
+    --form-bg-color: #1F2937;
+    --result-bg-color:#374151; 
+    --text-color: #D1D5BC;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form, .result {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form, .result {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    background-color: var(--form-bg-color);
+}
+
+.result {
+    background-color: var(--result-bg-color);
+}
+
+input, select, button {
+    margin-bottom: 15px;
+}
+
+option, select, input {
+    color: var(--text-color);
+    background-color: var(--result-bg-color);
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--result-bg-color);
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 425px) {
+    main {
+        padding: 0 15px;
+    }
+}
