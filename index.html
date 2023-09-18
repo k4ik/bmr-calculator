@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMR Calculator</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
     <main>
         <form class="form">
             <label for="gender">Gender:</label>
-            <select name="gender" id="gender">
+            <select name="gender" id="gender" class="gendersSelect">
                 <option value="men">Men</option>
                 <option value="women">Women</option>
             </select>
@@ -28,7 +27,7 @@
             <input type="number" name="age" id="age">
 
             <label for="level">Level of physical activity:</label>
-            <select name="level" id="level">
+            <select name="level" id="level" class="levelSelect">
                 <option value="sedentary">Sedentary</option>
                 <option value="lightlyActive">Lightly active</option>
                 <option value="moderatelyActive">Moderately active</option>
@@ -36,12 +35,14 @@
                 <option value="extremelyActive">Extremely active</option>
             </select>
 
-            <button type="button">
+            <button type="button" onclick="calculateBMR()">
                 <i class="ph-fill ph-barbell"></i>
                 Calculate
             </button>
         </form>
         <p class="result">BMR: <strong id="result"></strong></p>
     </main>
+
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
