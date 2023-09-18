@@ -5,6 +5,10 @@ function calculateBMR() {
     let age = parseFloat(document.querySelector("#age").value);
     let levelSelect = document.querySelector(".levelSelect").value;
 
+    if (isNaN(weight) || isNaN(height) || isNaN(age) || weight <= 0 || height <= 0 || age <= 0) {
+        alert("Please, enter valid values.");
+    }
+
     let result = document.querySelector("#result");
 
     let tmb;
@@ -24,9 +28,9 @@ function calculateBMR() {
 
     if (gendersSelect == "men") {
         tmb = (88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age)) * levelOfPhysicalActivity;
-        result.innerHTML=tmb;
+        result.innerHTML = `${tmb} cal`;
     } else {
         tmb = (447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age)) * levelOfPhysicalActivity;
-        result.innerHTML=tmb;
+        result.innerHTML = `${tmb} cal`;
     }
 }
