@@ -16,7 +16,7 @@
 }
 
 .light {
-    --bg-color: #ffffffce;
+    --bg-color: #ffffff;
     --form-bg-color: #F3F4F6;
     --result-bg-color: #E5E7EB;
     --text-color: #333333;
@@ -26,7 +26,9 @@ body {
     background-color: var(--bg-color);
 }
 
-header {
+/* Header */
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +37,7 @@ header {
     margin-bottom: 50px;
 }
 
-header h1 {
+.header h1 {
     font-size: 18px;
 }
 
@@ -52,6 +54,14 @@ header h1 {
     height: 25px;
 }
 
+/* Form */
+
+main {
+    border: 1px solid var(--text-color);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 .form {
     background-color: var(--form-bg-color);
 }
@@ -64,25 +74,9 @@ header h1 {
     margin: 0 auto;
 }
 
-.result {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
 input, select, button {
     margin-bottom: 15px;
     border: 1px solid #ffffff77;
-
-}
-
-input {
-    padding: 0 5px;
-}
-
-option, select, input {
-    color: var(--text-color);
-    background-color: var(--result-bg-color);
 }
 
 select {
@@ -93,8 +87,14 @@ label {
     margin-bottom: 5px;
 }
 
-.result {
+input {
+    padding: 0 5px;
+}
+
+option, select, input {
+    color: var(--text-color);
     background-color: var(--result-bg-color);
+    border: 1px solid var(--text-color);
 }
 
 button {
@@ -104,10 +104,20 @@ button {
     align-items: center;
     gap: 10px;
     background-color: var(--result-bg-color);
+    border: 1px solid var(--text-color);
     margin-top: 25px;
 }
 
-footer {
+.result {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: var(--result-bg-color);
+}
+
+/* Footer */
+
+.footer {
     text-align: center;
     background-color: var(--result-bg-color);
     font-size: 12px;
@@ -115,18 +125,12 @@ footer {
     margin-top: 50px;
 }
 
-footer a {
+.footer a {
     color: var(--text-color);
     text-decoration: none;
 }
 
-footer a:hover {
+.footer a:hover {
     text-decoration: underline;
     transition: .2s;
-}
-
-@media screen and (max-width: 425px) {
-    main {
-        padding: 0 15px;
-    }
 }
