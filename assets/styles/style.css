@@ -9,16 +9,16 @@
 }
 
 :root {
-    --bg-color: #111827;
-    --form-bg-color: #1F2937;
-    --result-bg-color: #374151;
+    --bg-color: #1b1c1e;
+    --form-bg-color: #2b2b2b;
+    --result-bg-color: #303030;
     --text-color: #D1D5BC;
 }
 
 .light {
     --bg-color: #ffffff;
     --form-bg-color: #F3F4F6;
-    --result-bg-color: #E5E7EB;
+    --result-bg-color: #c3fafe;
     --text-color: #333333;
 }
 
