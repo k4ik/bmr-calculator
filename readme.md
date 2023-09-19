@@ -6,8 +6,8 @@
 
 ## Screenshots 📷
 
-![App Screenshot](https://cdn.discordapp.com/attachments/1129232473470029864/1153495366180802580/image.png)
-![App Screenshot](https://cdn.discordapp.com/attachments/1129232473470029864/1153495370396082197/image.png)
+![App Screenshot](https://cdn.discordapp.com/attachments/1129232473470029864/1153769841598140476/image.png)
+![App Screenshot](https://cdn.discordapp.com/attachments/1129232473470029864/1153769856940916806/image.png)
 
 
 ## Demo 🔗
