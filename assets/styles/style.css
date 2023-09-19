@@ -41,7 +41,7 @@ body {
     font-size: 18px;
 }
 
-.chanceThemeBtn {
+.changeThemeBtn {
     background-color: transparent;
     border: none;
     outline: none;
@@ -49,7 +49,7 @@ body {
     height: 25px;
 }
 
-.chanceTheme {
+.changeTheme {
     width: 25px;
     height: 25px;
 }

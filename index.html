@@ -15,29 +15,29 @@
 <body>
     <header class="header">
         <h1>BMR Calculator</h1>
-        <button onclick="toggleMode()" class="chanceThemeBtn">
-            <ion-icon name="moon-outline"  class="chanceTheme" tabindex="6"></ion-icon>
+        <button onclick="toggleMode()" class="changeThemeBtn">
+            <ion-icon name="moon-outline"  class="changeTheme" tabindex="1" aria-label="changeTheme"></ion-icon>
         </button>
     </header>
     <main>
         <form class="form">
             <label for="gender">Gender:</label>
-            <select name="gender" id="gender" class="gendersSelect">
+            <select name="gender" id="gender" class="gendersSelect" tabindex="2">
                 <option value="men">Men</option>
                 <option value="women">Women</option>
             </select>
 
             <label for="weight">Weight(kg)</label>
-            <input type="number" id="weight" name="weight">
+            <input type="number" id="weight" name="weight" tabindex="3">
 
             <label for="height">Height(cm):</label>
-            <input type="number" name="height" id="height">
+            <input type="number" name="height" id="height" tabindex="4">
 
             <label for="age">Age(years):</label>
-            <input type="number" name="age" id="age">
+            <input type="number" name="age" id="age" tabindex="5">
 
             <label for="level">Level of physical activity:</label>
-            <select name="level" id="level" class="levelSelect">
+            <select name="level" id="level" class="levelSelect" tabindex="6">
                 <option value="sedentary">Sedentary</option>
                 <option value="lightlyActive">Lightly active</option>
                 <option value="moderatelyActive">Moderately active</option>
@@ -45,12 +45,12 @@
                 <option value="extremelyActive">Extremely active</option>
             </select>
 
-            <button type="button" onclick="calculateBMR()">Calculate</button>
+            <button type="button" onclick="calculateBMR()" tabindex="7">Calculate</button>
         </form>
         <p class="result">BMR: <strong id="result"></strong></p>
     </main>
     <footer class="footer">
-        <p>Developed by <a href="https://github.com/k4ik/" target="_blank">k4ik</a></p>
+        <p>Developed by <a href="https://github.com/k4ik/" target="_blank" tabindex="8">k4ik</a></p>
     </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
