@@ -9,21 +9,50 @@
 }
 
 :root {
-    --bg-color:#111827;
+    --bg-color: #111827;
     --form-bg-color: #1F2937;
-    --result-bg-color:#374151; 
+    --result-bg-color: #374151;
     --text-color: #D1D5BC;
+}
+
+.light {
+    --bg-color: #ffffffce;
+    --form-bg-color: #F3F4F6;
+    --result-bg-color: #E5E7EB;
+    --text-color: #333333;
 }
 
 body {
     background-color: var(--bg-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
 }
 
-form {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: var(--result-bg-color);
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 18px;
+}
+
+.chanceThemeBtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 25px;
+    height: 25px;
+}
+
+.chanceTheme {
+    width: 25px;
+    height: 25px;
+}
+
+.form {
     background-color: var(--form-bg-color);
 }
 
@@ -79,13 +108,11 @@ button {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     text-align: center;
     background-color: var(--result-bg-color);
     font-size: 12px;
     padding: 3px 0;
+    margin-top: 50px;
 }
 
 footer a {

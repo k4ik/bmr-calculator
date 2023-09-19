@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
+    <header>
+        <h1>BMR Calculator</h1>
+        <button onclick="toggleMode()" class="chanceThemeBtn">
+            <ion-icon name="moon-outline"  class="chanceTheme" tabindex="6"></ion-icon>
+        </button>
+    </header>
     <main>
         <form class="form">
             <label for="gender">Gender:</label>
@@ -48,6 +54,9 @@
         <p>Developed by <a href="https://github.com/k4ik/" target="_blank">k4ik</a></p>
     </footer>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/changeTheme.js"></script>
 </body>
 </html>
